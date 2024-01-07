@@ -130,9 +130,10 @@
             </div>
             <div class="swiper mySwiper">
                 <div class="swiper-wrapper">
-                    <div class="swiper-slide">
+                    <div id="feedback_slide" class="swiper-slide">
                         <div class="feedback_content">
-                            <p><span>❝</span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus eligendi recusandae
+                            <p><span>❝</span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus eligendi
+                                recusandae
                                 sapiente minus dignissimos quas dicta animi quo. Nulla sunt quaerat earum reiciendis
                                 expedita saepe cum modi mollitia pariatur.</p>
                             <div class="feedback_item">
@@ -146,13 +147,14 @@
                     </div>
                     <div class="swiper-slide">
                         <div class="feedback_content">
-                            <p><span>❝</span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus eligendi recusandae
+                            <p><span>❝</span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus eligendi
+                                recusandae
                                 sapiente minus dignissimos quas dicta animi quo. Nulla sunt quaerat earum reiciendis
                                 expedita saepe cum modi mollitia pariatur.</p>
                             <div class="feedback_item">
-                                <img src="./img/fb1.jpeg" alt="feedback_img1">
+                                <img src="./img/fb2.jpeg" alt="feedback_img1">
                                 <div class="feedback_name">
-                                    <h5>John Wilson</h5>
+                                    <h5>Julia Sakura</h5>
                                     <p>Example City</p>
                                 </div>
                             </div>
@@ -160,13 +162,14 @@
                     </div>
                     <div class="swiper-slide">
                         <div class="feedback_content">
-                            <p><span>❝</span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus eligendi recusandae
+                            <p><span>❝</span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus eligendi
+                                recusandae
                                 sapiente minus dignissimos quas dicta animi quo. Nulla sunt quaerat earum reiciendis
                                 expedita saepe cum modi mollitia pariatur.</p>
                             <div class="feedback_item">
-                                <img src="./img/fb1.jpeg" alt="feedback_img1">
+                                <img src="./img/fb3.jpeg" alt="feedback_img1">
                                 <div class="feedback_name">
-                                    <h5>John Wilson</h5>
+                                    <h5>Roy Linderson</h5>
                                     <p>Example City</p>
                                 </div>
                             </div>
@@ -174,13 +177,14 @@
                     </div>
                     <div class="swiper-slide">
                         <div class="feedback_content">
-                            <p><span>❝</span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus eligendi recusandae
+                            <p><span>❝</span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus eligendi
+                                recusandae
                                 sapiente minus dignissimos quas dicta animi quo. Nulla sunt quaerat earum reiciendis
                                 expedita saepe cum modi mollitia pariatur.</p>
                             <div class="feedback_item">
-                                <img src="./img/fb1.jpeg" alt="feedback_img1">
+                                <img src="./img/fb4.jpeg" alt="feedback_img1">
                                 <div class="feedback_name">
-                                    <h5>John Wilson</h5>
+                                    <h5>Muke Thyson</h5>
                                     <p>Example City</p>
                                 </div>
                             </div>
@@ -222,11 +226,25 @@
     <script>
         var swiper = new Swiper(".mySwiper", {
             slidesPerView: 2,
-            spaceBetween: 30,
-            freeMode: true,
+            spaceBetween: 20,
+            freeMode: false,
             pagination: {
                 el: ".swiper-pagination",
                 clickable: true,
+            },
+            breakpoints: {
+                576: {
+                    slidesPerView: 1,
+                    spaceBetween: 0,
+                },
+                768: {
+                    slidesPerView: 1,
+                    spaceBetween: 0,
+                },
+                992: {
+                    slidesPerView: 2,
+                    spaceBetween: 20,
+                },
             },
         });
     </script>

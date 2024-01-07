@@ -146,6 +146,10 @@ a:focus{
     background-color: var(--bg-light);
 }
 
+.feedback .swiper {
+    margin: 0 30px;
+}
+
 .feedback .title {
     text-align: center;
     margin-bottom: 50px;
@@ -153,7 +157,7 @@ a:focus{
 
 .feedback_content {
     background-color: var(--bg-color);
-    padding: 40px;
+    padding: 40px 30px;
     border-radius: 10px;
 }
 
@@ -187,10 +191,22 @@ a:focus{
     padding-top: 40px;
 }
 
-
-.feedback .swiper-pagination>span:hover {
-    width: 30px;
+#feedback_dot .swiper-pagination-bullet-active {
+    width: 26px;
     height: 10px;
     border-radius: 15px;
-    color:var(--primary-color);
+    background: var(--primary-color);
+}
+
+#feedback_dot .swiper-pagination-bullet {
+    margin: 10px;
+    transition: all 0.5;
+}
+
+#feedback_dot .swiper-pagination-bullet:hover {
+    width: 26px;
+    height: 10px;
+    border-radius: 15px;
+    background: var(--primary-color);
+    opacity: 1;
 }
