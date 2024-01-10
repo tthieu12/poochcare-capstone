@@ -109,7 +109,7 @@ a:focus {
 /* SERVICES */
 
 .services {
-    padding: 70px 0;
+    padding: 80px 0;
     background-color: var(--bg-light);
 
 }
@@ -161,7 +161,7 @@ a:focus {
 /* FEEDBACK */
 
 .feedback {
-    padding: 40px 0;
+    padding: 80px 0;
     background-color: var(--bg-light);
 }
 
@@ -233,7 +233,40 @@ a:focus {
 
 /* REGISTRATION */
 
+@media screen and (max-width:576px) {
+
+    /* .registration .registration_item .registration_input {
+        padding: 0;
+    } */
+
+
+}
+
+@media screen and (max-width:667px) {
+
+    .registration .registration_item .registration_sumit {
+        padding: 0;
+        margin-top: 20px;
+    }
+
+
+}
+
+@media screen and (min-width:667px) and (max-width:768px) {
+
+    .registration .registration_item button {
+        width: 150px;
+    }
+    
+}
+
+@media screen and (max-width:992px) {
+
+
+}
+
 .registration {
+    margin: auto;
     padding: 70px 0;
     text-align:-webkit-center;
 }
@@ -241,7 +274,12 @@ a:focus {
 .registration_content {
     padding:0;
     text-align: center;
-    width: 80%;
+    max-width: 650px;
+    margin: 30px 0;
+}
+
+.registration_text {
+    margin-bottom: 30px;
 }
 
 .registration_item input {
@@ -275,16 +313,9 @@ a:focus {
 
 /* FOOTER */
 
-@media screen and (max-width:992px) {
-
-    .footer_margintop {
-        margin-top: 30px;
-    }
-
-}
-
 footer {
     padding: 60px 0 20px 0;
+    margin-bottom: 25px;
     background-color:#111111;
 }
 
