@@ -235,7 +235,7 @@ a:focus {
 /* REGISTRATION */
 
 
-/* Light theme */
+/* Light theme
 #myBody {
     background-color: white;
   }
@@ -251,7 +251,7 @@ a:focus {
   }
   #switchButton .fa-moon {
     display: block;
-  }
+  } */
 
 
 @media screen and (max-width:576px) {
