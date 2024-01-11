@@ -182,6 +182,7 @@ a:focus {
 
 .feedback_content p {
     margin: 10px 0 20px 20px;
+    color: var(--para-color);
 }
 
 .feedback_content span {
@@ -233,6 +234,26 @@ a:focus {
 
 /* REGISTRATION */
 
+
+/* Light theme */
+#myBody {
+    background-color: white;
+  }
+  #switchButton {
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+    background-color: white;
+    border: 1px solid black;
+  }
+  #switchButton .fa-sun {
+    display: none;
+  }
+  #switchButton .fa-moon {
+    display: block;
+  }
+
+
 @media screen and (max-width:576px) {
 
     /* .registration .registration_item .registration_input {
@@ -266,9 +287,11 @@ a:focus {
 }
 
 .registration {
+    position: relative;
     margin: auto;
     padding: 70px 0;
     text-align:-webkit-center;
+    background-color: var(--bg-color);
 }
 
 .registration_content {
@@ -300,7 +323,7 @@ a:focus {
     background-color: var(--primary-color);
     border: 1px solid transparent;
     border-radius: 10px;
-    color: var(--bg-color);
+    color: #fff;
     font-size: 18px;
     transition: all 0.5s;
 }
@@ -320,12 +343,12 @@ footer {
 }
 
 footer h5 {
-    color: var(--bg-color);
+    color:#fff;
     margin-bottom: 40px;
 }
 
 footer h6 {
-    color: var(--font-color);
+    color: var(--para-color);
     margin-right: 5px;
 }
 
@@ -337,6 +360,7 @@ footer h6 {
 
 .footer_contact p {
     font-size: 17px;
+    color: var(--para-color);
 }
 
 .footer_item .fa {
@@ -344,7 +368,7 @@ footer h6 {
 }
 
 footer a,.footer_item a {
-    color: var(--font-color);
+    color: var(--para-color);
     transition: all 0.5s;
     font-size: 17px;
 }
@@ -379,6 +403,7 @@ footer a,.footer_item a {
 .footer_version p {
     margin:0;
     font-size: 16px;
+    color: var(--para-color);
 }
 
 .footer_version a {
