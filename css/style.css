@@ -421,7 +421,9 @@ a:focus {
     transition: 0.3s ease-out;
     color: #fff;
   }
-
+.back-to-top:focus{
+    outline: 0;
+}
 .cd-top--is-visible { 
   visibility: visible;  
   opacity: 1;
@@ -624,14 +626,12 @@ footer a,
 /* HEADER */
 header {
     background-color: var(--bg-color);
+    padding: 0px;
+    transition: all 0.4s ease 0s;
+    height: 90px;
     display: grid;
     align-items: center;
-    transition: all 0.5s ease 0s;
-    position: fixed;
-    top: 0;
-    right: 0;
-    left: 0;
-    z-index: 1030;
+    box-shadow: 0 3px 9px rgba(0, 0, 0, 0.05);
 }
 
 header .container {
