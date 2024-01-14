@@ -57,6 +57,11 @@ body {
 
 .navbar #switchButton .fa-moon {
     display: block;
+    font-size: 25px;
+    width: 30px;
+    height: 30px;
+    padding: 5px;
+
 }
 
 .navbar #switchButton i {
@@ -309,7 +314,8 @@ a:focus {
 
 }
 
-@media screen and (max-width:992px) {}
+@media screen and (max-width:992px) {
+}
 
 .registration {
     position: relative;
@@ -409,7 +415,7 @@ footer a,
 
 .footer_contact a:hover {
     text-decoration: underline;
-    color: var(--bg-color);
+    color:#fff;
 }
 
 .footer_item a {
@@ -449,6 +455,7 @@ footer a,
 
 .footer_version a:hover {
     text-decoration: underline;
+    color: white;
 }
 
 /* HEADER */
@@ -537,7 +544,10 @@ a.dropdown-item:hover::before {
 
 .navbar #switchButton .la-sun {
     opacity: .5;
-    font-size: 28px;
+    font-size: 25px;
+    width: 30px;
+    height: 30px;
+    padding: 5px;
 }
 
 .navbar .navbar-toggler span {
