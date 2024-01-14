@@ -633,7 +633,9 @@ header {
     align-items: center;
     box-shadow: 0 3px 9px rgba(0, 0, 0, 0.05);
 }
-
+.header-fixed-space-height{
+    margin-top: 90px;
+}
 header .container {
     padding: 0;
 }
@@ -1255,3 +1257,5 @@ div#small-dialog iframe {
         margin: 30px auto;
     }
 }
+
+/* poochCarousel */
