@@ -23,7 +23,11 @@
     <link rel="stylesheet" href="./css/flaticon/flaticon.css">
     <link rel="stylesheet"
         href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
-
+    
+        <!-- ƠWL-CAROUSEL -->
+    <link rel="stylesheet" href="./css/owl.carousel.min.css">
+    <link rel="stylesheet" href="./css/owl.theme.default.min.css">
+    
     <!-- SWIPER -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 
@@ -93,12 +97,110 @@
         </div>
     </header>
 
-    <!-- CAROUSEL -->
+     <!-- CAROUSEL -->
+     <section class="poochCarousel">
+        <div class="poochCarousel__content">
+            <div class="owl-carousel owl-theme">
+                <div class="poochCarousel__item">
+                    <li>
+                        <div class="poochCarousel__banner banner1">
+                           <style>
+                                .poochCarousel .banner1{
+                                    background: url(./img/banner1.jpg);
+                                    background-size: cover;
+                                }
+                           </style>
+                            <div class="poochCarousel__info">
+                                <div class="container">
+                                    <div class="poochCarousel__text text-left">
+                                        <h5>Quality Things for Loving Pets</h5>
+                                        <p>Keeps your Pet Smiling</p>
+                                        <a class="btn btn-style btn-white mt-sm-5 mt-4 mr-2" href="#">
+                                            Read More</a>
+                                        <a class="btn btn-style border-btn mt-sm-5 mt-4" href="#">Contact Us</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </div>
+                <div class="poochCarousel__item">
+                    <li>
+                        <div class="poochCarousel__banner banner2">
+                            <style>
+                                .poochCarousel .banner2{
+                                    background: url(./img/banner2.jpg);
+                                    background-size: cover;
+                                }
+                           </style>
+                            <div class="poochCarousel__info">
+                                <div class="container">
+                                    <div class="poochCarousel__text ml-lg-auto">
+                                        <h5>Delivering happiness for Pets</h5>
+                                        <p>For the love of pets </p>
+                                        <a class="btn btn-style btn-white mt-sm-5 mt-4 mr-2" href="#">
+                                            Read More</a>
+                                        <a class="btn btn-style border-btn mt-sm-5 mt-4" href="#">Contact Us</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </div>
+                <div class="poochCarousel__item">
+                    <li>
+                        <div class="poochCarousel__banner banner3">
+                            <style>
+                                .poochCarousel .banner3{
+                                    background: url(./img/banner1.jpg);
+                                    background-size: cover;
+                                }
+                           </style>
+                            <div class="poochCarousel__info">
+                                <div class="container">
+                                    <div class="poochCarousel__text text-left">
+                                        <h5>Quality Things for Loving Pets</h5>
+                                        <p>Keeps your Pet Smiling</p>
+                                        <a class="btn btn-style btn-white mt-sm-5 mt-4 mr-2" href="#">
+                                            Read More</a>
+                                        <a class="btn btn-style border-btn mt-sm-5 mt-4" href="#">Contact Us</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </div>
+                <div class="poochCarousel__item">
+                    <li>
+                        <div class="poochCarousel__banner banner4">
+                            <style>
+                                .poochCarousel .banner4{
+                                    background: url(./img/banner2.jpg);
+                                    background-size: cover;
+                                }
+                           </style>
+                            <div class="poochCarousel__info">
+                                <div class="container">
+                                    <div class="poochCarousel__text ml-lg-auto">
+                                        <h5>Delivering happiness for Pets</h5>
+                                        <p>For the love of pets </p>
+                                        <a class="btn btn-style btn-white mt-sm-5 mt-4 mr-2" href="#">
+                                            Read More</a>
+                                        <a class="btn btn-style border-btn mt-sm-5 mt-4" href="#">Contact Us</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </div>
+            </div>
+        </div>
+    </section>
 
 
     <!-- ABOUT -->
-    <section class="about">
-        <div class="container">
+    <section class="about py-5">
+        <div class="container py-md-5 py-3">
             <div class="bottom-ab-grids align-items-center">
                 <div class="bottom-ab-left">
                     <h6 class="sub-title HPAbout">About Us</h6>
@@ -496,6 +598,40 @@
     <script>
        $('.counter').countUp();
     </script>
+     <!-- OWL-CAROUSEL -->
+     <script src="./js/owl.carousel.min.js"></script>
+     <script>
+         $(document).ready(function () {
+           $('.owl-carousel').owlCarousel({
+             loop: true,
+             margin: 0,
+             nav: false,
+             responsiveClass: true,
+             autoplay: true,
+             autoplayTimeout: 5000,
+             autoplaySpeed: 1000,
+             autoplayHoverPause: false,
+             responsive: {
+               0: {
+                 items: 1,
+                 nav: false
+               },
+               480: {
+                 items: 1,
+                 nav: false
+               },
+               667: {
+                 items: 1,
+                 nav: true
+               },
+               1000: {
+                 items: 1,
+                 nav: true
+               }
+             }
+           })
+         })
+       </script>
     <!-- MAGNIFIC POPUP -->
     <script src="./js/jquery.magnific-popup.min.js"></script>
     <script>
