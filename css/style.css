@@ -421,7 +421,9 @@ a:focus {
     transition: 0.3s ease-out;
     color: #fff;
   }
-
+.back-to-top:focus{
+    outline: 0;
+}
 .cd-top--is-visible { 
   visibility: visible;  
   opacity: 1;
