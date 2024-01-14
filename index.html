@@ -27,6 +27,9 @@
     <!-- SWIPER -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 
+    <!-- magnific -->
+    <link rel="stylesheet" href="./css/magnific-popup.css">
+
     <!-- MAIN CSS -->
     <link rel="stylesheet" href="./css/style.css">
 </head>
@@ -91,11 +94,27 @@
     </header>
 
     <!-- CAROUSEL -->
-    <section class="poochCarousel">
-    </section>
+
 
     <!-- ABOUT -->
-    <section class="about"></section>
+    <section class="about">
+        <div class="container">
+            <div class="bottom-ab-grids align-items-center">
+                <div class="bottom-ab-left">
+                    <h6 class="sub-title HPAbout">About Us</h6>
+                    <h3 class="hny-title">
+                        We love your pets like they are our own </h3>
+                    <p class="my-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur hic odio
+                        voluptatem
+                        tenetur consequatur. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere
+                        cubilia Curae;
+                        Nulla mollis dapibus nunc, ut rhoncus
+                        turpis sodales quis. </p>
+                    <a href="#" class="read">Read More</a>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <!-- SERVICES -->
     <section class="services">
@@ -186,19 +205,19 @@
                             amet, consectetur adipisicingelit.</p>
                         <ul class="cont-4">
                             <li>
-                                <span class="fa fa-check"></span>Certified Groomer 
+                                <span class="fa fa-check"></span>Certified Groomer
                             </li>
                             <li>
-                                <span class="fa fa-check"></span>10 Years of Experience 
+                                <span class="fa fa-check"></span>10 Years of Experience
                             </li>
                             <li>
-                                <span class="fa fa-check"></span>Pet Lover 
+                                <span class="fa fa-check"></span>Pet Lover
                             </li>
                             <li>
-                                <span class="fa fa-check"></span>Customer Supports 
+                                <span class="fa fa-check"></span>Customer Supports
                             </li>
                             <li>
-                                <span class="fa fa-check"></span>Veterinary Help 
+                                <span class="fa fa-check"></span>Veterinary Help
                             </li>
 
                         </ul>
@@ -236,7 +255,41 @@
     <section class="packages"></section>
 
     <!-- VIDEO -->
-    <section class="video"></section>
+    <section class="w3l-index5">
+        <div class="new-block py-5">
+            <div class="container py-lg-5 HPVideoPopup">
+                <div class="middle-section text-center">
+                    <div class="section-width">
+                        <h6 class="sub-title text-center"> Better pet nutrition.</h6>
+                        <h3 class="hny-title"> The finest fresh food and all your pet needs.</h3>
+                        <p class="mt-3">Lorem ipsum, dolor sit amet consectetur adipisicing elit.Lorem ipsum dolor sit
+                            amet elit consec tetur adipisi elit. Lorem ipsum dolor sit amet elit consec tetur adipisi
+                            elit. Iure voluptatibus explicabo officia.</p>
+                    </div>
+                    <div class="history-info mt-5">
+                        <div class="position-relative">
+
+                            <img src="https://wp.w3layouts.com/poochcare/wp-content/themes/Pooch-care/assets/images/banner2.jpg"
+                                class="img-fluid radius-image video-popup-image" alt="video-popup" />
+
+                            <a href="#small-dialog"
+                                class="open-popup-link popup-with-zoom-anim play-view text-center position-absolute">
+                                <span class="video-play-icon">
+                                    <span class="fa fa-play"></span>
+                                </span>
+                            </a>
+
+                            <!-- dialog itself, mfp-hide class is required to make dialog hidden -->
+                            <div id="small-dialog" class="zoom-anim-dialog mfp-hide">
+                                <iframe src="https://player.vimeo.com/video/101587706" frameborder="0"
+                                    allow="autoplay; fullscreen" allowfullscreen></iframe>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <!-- FEEDBACK -->
 
@@ -417,7 +470,11 @@
         </div>
     </footer>
 
-    <!-- BACK-TO-TOP -->
+    <a href="" class="back-to-top cd-top text-replace js-cd-top">
+        <span class="fa fa-angle-up"></span>
+    </a>
+
+    
 
     <!-- JQUERY & BS4 -->
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
@@ -426,19 +483,48 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
         crossorigin="anonymous"></script>
+    <!-- back to top -->
+    <script src="./js/util.js"></script>
+    <script src="./js/backtotop.js"></script>
 
     <!-- COUNTING UP -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js" integrity="sha512-CEiA+78TpP9KAIPzqBvxUv8hy41jyI3f2uHi7DGp/Y/Ka973qgSdybNegWFciqh6GrN2UePx2KkflnQUbUhNIA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="./js/jquery.countup.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"
+        integrity="sha512-CEiA+78TpP9KAIPzqBvxUv8hy41jyI3f2uHi7DGp/Y/Ka973qgSdybNegWFciqh6GrN2UePx2KkflnQUbUhNIA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- <script src="./js/jquery.countup.min.js"></script> -->
+    <script src="./js/jquery.countup.js"></script>
     <script>
-        $('.counter').countUp();
+       $('.counter').countUp();
     </script>
     <!-- MAGNIFIC POPUP -->
+    <script src="./js/jquery.magnific-popup.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $(".popup-with-zoom-anim").magnificPopup({
+                type: "inline",
+
+                fixedContentPos: false,
+                fixedBgPos: true,
+
+                overflowY: "auto",
+
+                closeBtnInside: true,
+                preloader: false,
+
+                midClick: true,
+                removalDelay: 300,
+                mainClass: "my-mfp-zoom-in"
+            });
+        });
+
+    </script>
+
 
     <!-- Swiper JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
     <!-- Initialize Swiper -->
+
     <script>
         var swiper = new Swiper(".mySwiper", {
             slidesPerView: 2,
@@ -467,9 +553,11 @@
                 },
             },
         });
+
     </script>
 
     <!-- MAIN JS -->
+ 
     <script src="./js/main.js"></script>
 </body>
 
