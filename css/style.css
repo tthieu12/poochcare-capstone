@@ -452,16 +452,16 @@ footer a,.footer_item a {
 /* HEADER */
 header {
     background-color: var(--bg-color);
+    padding: 0px;
+    transition: all 0.4s ease 0s;
+    height: 90px;
     display: grid;
     align-items: center;
-    transition: all 0.5s ease 0s;
-    position: fixed;
-    top: 0;
-    right: 0;
-    left: 0;
-    z-index: 1030;
+    box-shadow: 0 3px 9px rgba(0, 0, 0, 0.05);
 }
-
+.header-fixed-space-height{
+    margin-top: 90px;
+}
 header .container {
     padding: 0;
 }
@@ -906,3 +906,5 @@ header .navbar a.dropdown-item:hover {
         margin: 30px auto;
     }
 }
+
+/* poochCarousel */
