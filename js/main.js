@@ -1,6 +1,7 @@
 // THEME
 document.getElementById("switchButton").onclick = function () {
     document.getElementById("myBody").classList.toggle("dark");
+    document.getElementById("myHTML").classList.toggle("dark");
 };
 
 //
