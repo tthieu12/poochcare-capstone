@@ -614,7 +614,7 @@ footer a,
 }
 
 .footer_item a:hover {
-    color: var(--bg-color);
+    color: #fff;
 }
 
 .footer_contact li {
